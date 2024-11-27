@@ -1,7 +1,7 @@
 steps:
 # Step 1: Build the Docker Image
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/hello-tam/hello-tam-docker-repo/cloud-build-demo:prod1', '.' ]
+  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/hello-tam/hello-tam-docker-repo/cloud-build-demo:prod1', './cloud-build-demo-prj' ]
 
 # Step 2: Push the image to the Artifact Registry
 - name: 'gcr.io/cloud-builders/docker'
